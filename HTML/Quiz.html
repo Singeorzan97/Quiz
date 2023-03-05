@@ -31,27 +31,30 @@
     <script src="../JS/Quiz.js"></script>
 </head>
 <body>
+  
     <h1 class="text-5xl mt-2 font-title text-center">Quiz Game</h1>
- <button onclick="showItems()" class="font-start text-base mt-12 italic ml-20 bg-neutral-600 text-white hover:bg-teal-800 rounded-md p-2.5 w-150 cursor-pointer">START QUIZ</button>
- <div id="ShowItems" class="font-sans  mt-10 ml-10 text-lg">
-  <h2>Time Limit: 20 minutes</h2>
-  <h2>You must obtain minimum 6 grade to pass the quiz!</h2>
-  <h2>Just one option is the correct answer and you obtain 0.5 point for every correct answer</h2>
-  <h2>Good Luck!</h2>
+    <div class="font-sans mt-20 ml-10 text-lg">
+    <h2>Time Limit: 20 minutes</h2>
+    <h2>You must obtain minimum 6 grade to pass the quiz!</h2>
+    <h2>Just one option is the correct answer and you obtain 0.5 point for every correct answer</h2>
+    <h2>Good Luck!</h2>
+  </div>
+ <button onclick="showItems()" class="font-start text-base mt-8 italic ml-10 bg-neutral-600 text-white hover:bg-teal-800 rounded-md p-2.5 w-150 cursor-pointer">START QUIZ</button>
+ <div id="ShowItems" class="font-sans hidden mt-6 ml-10 text-lg">
   <div>
- <ol class="list-decimal p-8 mt-8">
+ <ol class="list-decimal p-6">
   <li class="mb-6">What is the longest river in the world?</li>
- <label for="Amazon" class="border-2 border-teal-700 bg-sky-200 cursor-pointer font-sans p-2 mb-2  text-lg  max-w-270 rounded-md block">
+ <label for="Amazon" class="border-4 border-teal-800 bg-teal-800 text-white  cursor-pointer font-sans p-2 mb-2  text-lg  max-w-270 rounded-md block">
     <input class="cursor-pointer" id="Amazon" type="radio" name="River"> Amazon River
   </label>
-  <label for="Yangtze" class="border-2 cursor-pointer border-teal-700 p-2 mb-2 text-lg bg-sky-200 font-sans max-w-270 rounded-md block">
+  <label for="Yangtze" class="border-4 cursor-pointer border-teal-800 text-white bg-teal-800 p-2 mb-2 text-lg font-sans max-w-270 rounded-md block">
     <input class="cursor-pointer" id="Yangtze" type="radio" name="River"> Yangtze River
   </label>
-  <label for="Nile" class="border-2 cursor-pointer border-teal-700  bg-sky-200 p-2 mb-6 text-lg max-w-270 font-sans rounded-md block">
+  <label for="Nile" class="border-4 cursor-pointer border-teal-800 text-white bg-teal-800 p-2 mb-6 text-lg max-w-270 font-sans rounded-md block">
     <input class="cursor-pointer" id="Nile" type="radio" name="River"> Nile River
   </label>
 
-  <li class="mb-6">How many bones are there in and adult human body?</li>
+  <li class="mb-6">How many bones are there in an adult human body?</li>
   <label for="Nr112" class="border-2 cursor-pointer border-teal-700 bg-sky-200 font-sans p-2 mb-2 text-lg  max-w-270 rounded-md block">
     <input class="cursor-pointer" id="Nr112" type="radio" name="Bones"> 112
   </label>
@@ -84,7 +87,7 @@
     <input class="cursor-pointer" id="Mars" type="radio" name="Planets"> Mars & Uranus
   </label>
 
-  <li class="mb-6">The Flag of the European Union has how many stars on it?</li>
+  <li class="mb-6">How many stars does the european union flag have on it?</li>
   <label for="Stars" class="border-2 cursor-pointer border-teal-700 bg-sky-200 font-sans p-2 mb-2  text-lg  max-w-270 rounded-md block">
     <input class="cursor-pointer" id="Stars" type="radio" name="Union"> 9
   </label>
@@ -161,7 +164,7 @@
     <input class="cursor-pointer" id="Naypyidaw" type="radio" name="Capital"> Naypyidaw
   </label>
 
-  <li class="mb-6">In which country is the Taj Mahal?</li>
+  <li class="mb-6">In which country is situated Taj Mahal?</li>
   <label for="India" class="border-2 cursor-pointer border-teal-700 bg-sky-200 font-sans p-2 mb-2  text-lg  max-w-270 rounded-md block">
     <input class="cursor-pointer" id="India" type="radio" name="TajMahal"> India
   </label>
@@ -221,7 +224,7 @@
     <input class="cursor-pointer" id="Spanish" type="radio" name="Spoken"> Spanish
   </label>
   <label for="Guaraní" class="border-2 cursor-pointer border-teal-700 p-2 mb-2 text-lg bg-sky-200 font-sans max-w-270 rounded-md block">
-    <input class="cursor-pointer" id="Guaraní" type="radio" name="Spoke"> Guaraní
+    <input class="cursor-pointer" id="Guaraní" type="radio" name="Spoken"> Guaraní
   </label>
   <label for="Portuguese" class="border-2 cursor-pointer border-teal-700  bg-sky-200 p-2 mb-6 text-lg max-w-270 font-sans rounded-md block">
     <input class="cursor-pointer" id="Portuguese" type="radio" name="Spoken"> Portuguese
@@ -256,12 +259,10 @@
   <label for="Congo" class="border-2 cursor-pointer border-teal-700 p-2 mb-2 text-lg bg-sky-200 font-sans max-w-270 rounded-md block">
     <input class="cursor-pointer" id="Congo" type="radio" name="Rainforest"> The Congo 
   </label>
-  <label for="TheAmazon" class="border-2 cursor-pointer border-teal-700  bg-sky-200 p-2 mb-6 text-lg max-w-270 font-sans rounded-md block">
+  <label for="TheAmazon" class="border-2 cursor-pointer border-teal-700  bg-sky-200 p-2 mb-9 text-lg max-w-270 font-sans rounded-md block">
     <input class="cursor-pointer" id="TheAmazon" type="radio" name="Rainforest"> The Amazon 
   </label>
-  <div class="">
-    <button class="border-2 bg-teal-700 w-20">Submit</button>
-  </div>
+    <button onclick="Submit()" class="font-start text-base italic ml-16 bg-neutral-600 text-white hover:bg-teal-800 rounded-md p-2.5 w-150 cursor-pointer">SUBMIT</button>
  </ol>
    
   </div>
