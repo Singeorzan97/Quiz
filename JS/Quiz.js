@@ -21,6 +21,8 @@ function Submit() {
     }
 }
 
+
+
     // console.log(document.getElementsByName("Spoken"));
     // Object.keys(letiabila tip object) returneaza cheile obiectului; ex: let x = {"Nume": Dan, "Prenume": Singeorzan}.
     // intrebari.forEach(intrebare => ) -> itereaza prin fiecare element al array-ului de intrebari, adica intrebarile fiind: Spoken, Rainforest.
