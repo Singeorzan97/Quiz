@@ -9,9 +9,17 @@ function Submit() {
     intrebari.forEach(intrebare => { 
         let inputValues = document.getElementsByName(intrebare);
         let correct = correctAnswers[intrebare];
-        if (inputValues[correct].checked == true) {
-            Nota = Nota + .5
-        }
+
+        inputValues.forEach((input, index) => {
+            if (index === correct) {
+                if (input.checked == true) {
+                    Nota = Nota + .5;
+                }
+                input.parentElement.style.border = "1px solid green";
+            } else if (input.checked == true) {
+                input.parentElement.style.border = "1px solid red";
+            }
+        });
     });
     if (Nota >= 6) {
         alert ("Congrulations your grade is " + Nota + " , you pass the test" )
